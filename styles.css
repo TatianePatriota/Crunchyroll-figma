@@ -5,8 +5,8 @@
 }
 
 body {
-    width: 100vw;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -93,11 +93,12 @@ a {
     max-width: 100vw;
     margin-left: 70px;
     margin-right: 70px;
+   
 }
 
 .section-principal {
     display: flex;
-    
+    max-width: 100%;
 }
 
 .titulo-container {
@@ -108,31 +109,63 @@ a {
    padding-top: 35px;
 }
 
+.img-1 {
+    background-image: url(./img/Tokyo\ Revengers.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 165px;
+    width: 180px;
+}
+
+.img-2 {
+    background-image: url(./img/Sun-Ken\ Rock.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 165px;
+    width: 180px;
+}
+
+.img-3 {
+    background-image: url(./img/Black\ Clover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 165px;
+    width: 180px;
+}
 
 h3 {
     color: #929292;
     font-size: 14px;
-    width: 155px;
-    height: 22px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
 }
  
 .sinopse-animes {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .sinopse {
-    width: 170px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 16px;
     color: #929292;
     margin-top: 5px;
+    text-align: initial;
 }
 
 .texto-sinopse {
-    margin-left: 20px;
-
+    padding-left: 10px;
+    padding-right: 10px;   
+    font-family: 'roboto';
+    width: 200px;
+    height: 165px;
 }
 
 .catalogo {
@@ -144,24 +177,22 @@ h3 {
     width: 300px;
     height: 165px;
     border-radius: 15px;
+    margin-right: 20px;
 }
 
 .anime-1 {
     background-image: url(./img/anime1.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .anime-2 {
     background-image: url(./img/anime2.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .anime-3 {
     background-image: url(./img/anime3.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .anime-4 {
@@ -172,19 +203,16 @@ h3 {
 .manga-1 {
     background-image: url(./img/manga1.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .manga-2 {
     background-image: url(./img/manga2.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .manga-3 {
     background-image: url(./img/manga3.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .manga-4 {
@@ -195,19 +223,16 @@ h3 {
 .new-anime-1 {
     background-image: url(./img/new-anime1.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .new-anime-2 {
     background-image: url(./img/new-anime2.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .new-anime-3 {
     background-image: url(./img/new-anime3.png);
     background-size: cover;
-    margin-right: 20px;
 }
 
 .new-anime-4 {
@@ -241,6 +266,7 @@ h3 {
 .rodape-principal {
     color: #E5E5E5;
     height: 445px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,7 +347,7 @@ h3 {
 }
 
 .rodape-final {
-    width: 100%;
+    width: 100vw;
     height: 75px;
     color: #E5E5E5;
     background-color: #161616;
@@ -353,4 +379,104 @@ h3 {
     border-radius: 15px;
     margin-right: 70px;
     border: none;
+}
+
+@media screen and (max-width: 780px) {
+    
+   .titulo {
+       font-size: 20px;
+    }
+
+   span {
+       font-size: 15px;
+       text-align: center;
+    }
+
+   .botao-nav  {
+       font-size: 10px;
+       width: 150px;
+       height: 40px;
+    }
+
+   .titulo-container {
+       text-align: center;
+    }
+
+   .section-principal {
+       flex-direction: column;
+       align-items: center;
+    }
+
+   .sinopse-animes {
+        flex-direction: column;
+    }
+
+   .texto-sinopse {
+       text-align: center;
+       margin-top: 20px;
+       width: 500px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .sinopse {
+        font-size: 20px;
+        line-height: 25px ;
+    }
+
+   .catalogo {
+       flex-direction: column;
+    }
+
+   .layout-container {
+       margin-bottom: 30px;
+    }
+
+   .sinopse-container-5 {
+        padding-bottom: 40px;
+    }
+   
+    .cowboy-2{
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 310px;
+        height: 240px;
+        margin-right: 20px; 
+        margin-top: 20px;
+    }
+
+   .titulo-rodape{
+       font-size: 20px;
+    }
+
+   .texto-rodape-principal {
+       font-size: 15px;
+       text-align: center;
+       width: 70vw;
+    }
+
+    .titulo-final {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .texto-final {
+        font-size: 11px;
+        margin-left: 20px;
+    }
+
+    .botao-rodape {
+        width: 80px;
+        height: 25px;
+        font-size: 10px;
+        margin-right: 50px
+    }
+
+
 }
